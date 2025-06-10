@@ -1,0 +1,48 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "D:\program\iverilog\iverilog\lib\ivl\system.vpi";
+:vpi_module "D:\program\iverilog\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "D:\program\iverilog\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "D:\program\iverilog\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "D:\program\iverilog\iverilog\lib\ivl\va_math.vpi";
+S_000002ce4f489e20 .scope module, "wave_gen_tb" "wave_gen_tb" 2 1;
+ .timescale 0 0;
+v000002ce4f48bb60_0 .var "en", 0 0;
+v000002ce4f48bc00_0 .var "pat", 1 0;
+v000002ce4f48bca0_0 .net "wave", 7 0, L_000002ce4f48be70;  1 drivers
+S_000002ce4f489fb0 .scope module, "w_tb" "wave_gen" 2 5, 3 1 0, S_000002ce4f489e20;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "en";
+    .port_info 1 /INPUT 2 "pat";
+    .port_info 2 /OUTPUT 8 "wave";
+v000002ce4f489320_0 .net *"_ivl_0", 7 0, L_000002ce4f48bd40;  1 drivers
+o000002ce4f4d6fd8 .functor BUFZ 8, C4<zzzzzzzz>; HiZ drive
+; Elide local net with no drivers, v000002ce4f486ce0_0 name=_ivl_2
+v000002ce4f487050_0 .net "en", 0 0, v000002ce4f48bb60_0;  1 drivers
+v000002ce4f48a140_0 .net "pat", 1 0, v000002ce4f48bc00_0;  1 drivers
+v000002ce4f48bac0_0 .net "wave", 7 0, L_000002ce4f48be70;  alias, 1 drivers
+L_000002ce4f48bd40 .concat [ 2 2 2 2], v000002ce4f48bc00_0, v000002ce4f48bc00_0, v000002ce4f48bc00_0, v000002ce4f48bc00_0;
+L_000002ce4f48be70 .functor MUXZ 8, o000002ce4f4d6fd8, L_000002ce4f48bd40, v000002ce4f48bb60_0, C4<>;
+    .scope S_000002ce4f489e20;
+T_0 ;
+    %pushi/vec4 2, 0, 2;
+    %store/vec4 v000002ce4f48bc00_0, 0, 2;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000002ce4f48bb60_0, 0, 1;
+    %delay 5, 0;
+    %vpi_call 2 8 "$display", "Pattern: %b, Enable: %b, Wave: %b", v000002ce4f48bc00_0, v000002ce4f48bb60_0, v000002ce4f48bca0_0 {0 0 0};
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000002ce4f48bb60_0, 0, 1;
+    %delay 5, 0;
+    %vpi_call 2 10 "$display", "Pattern: %b, Enable: %b, Wave: %b", v000002ce4f48bc00_0, v000002ce4f48bb60_0, v000002ce4f48bca0_0 {0 0 0};
+    %vpi_call 2 11 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    ".\wave_gen_tb.v";
+    ".\wave_gen.v";

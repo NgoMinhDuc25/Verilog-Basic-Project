@@ -1,0 +1,46 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "D:\program\iverilog\iverilog\lib\ivl\system.vpi";
+:vpi_module "D:\program\iverilog\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "D:\program\iverilog\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "D:\program\iverilog\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "D:\program\iverilog\iverilog\lib\ivl\va_math.vpi";
+S_0000024baba85cc0 .scope module, "string_shift_tb" "string_shift_tb" 2 1;
+ .timescale 0 0;
+v0000024babacb960_0 .var "in1", 3 0;
+v0000024babacba00_0 .var "in2", 3 0;
+v0000024babacbaa0_0 .net "out", 7 0, L_0000024babb13c90;  1 drivers
+S_0000024baba85e50 .scope module, "s_tb" "string_shift" 2 6, 3 1 0, S_0000024baba85cc0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 4 "in1";
+    .port_info 1 /INPUT 4 "in2";
+    .port_info 2 /OUTPUT 8 "out";
+v0000024baba36e50_0 .net *"_ivl_0", 7 0, L_0000024babacbb40;  1 drivers
+v0000024baba39520_0 .net *"_ivl_4", 5 0, L_0000024babacbbe0;  1 drivers
+L_0000024babacbc88 .functor BUFT 1, C4<00>, C4<0>, C4<0>, C4<0>;
+v0000024baba85fe0_0 .net *"_ivl_6", 1 0, L_0000024babacbc88;  1 drivers
+v0000024baba86080_0 .net "in1", 3 0, v0000024babacb960_0;  1 drivers
+v0000024babacb820_0 .net "in2", 3 0, v0000024babacba00_0;  1 drivers
+v0000024babacb8c0_0 .net "out", 7 0, L_0000024babb13c90;  alias, 1 drivers
+L_0000024babacbb40 .concat [ 4 4 0 0], v0000024babacba00_0, v0000024babacb960_0;
+L_0000024babacbbe0 .part L_0000024babacbb40, 0, 6;
+L_0000024babb13c90 .concat [ 2 6 0 0], L_0000024babacbc88, L_0000024babacbbe0;
+    .scope S_0000024baba85cc0;
+T_0 ;
+    %pushi/vec4 10, 0, 4;
+    %store/vec4 v0000024babacb960_0, 0, 4;
+    %pushi/vec4 5, 0, 4;
+    %store/vec4 v0000024babacba00_0, 0, 4;
+    %delay 5, 0;
+    %vpi_call 2 10 "$display", "%b\011 %b\011 %b", v0000024babacb960_0, v0000024babacba00_0, v0000024babacbaa0_0 {0 0 0};
+    %vpi_call 2 11 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    ".\string_shift_tb.v";
+    ".\string_shift.v";

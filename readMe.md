@@ -26,3 +26,7 @@ gtkwave [out_vcd_file]
 ## 4 to 2 priority encoder 
 
 ![Schematic](img/4x2Encoder.png)
+
+## 8 to 3 priority encoder 
+
+![Schematic](img/8to3encoder.png)

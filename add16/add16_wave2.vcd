@@ -1,5 +1,5 @@
 $date
-	Tue Jun 10 21:03:47 2025
+	Wed Jun 11 17:03:37 2025
 $end
 $version
 	Icarus Verilog
@@ -419,6 +419,8 @@ $upscope $end
 $upscope $end
 $upscope $end
 $upscope $end
+$upscope $end
+$scope task generate_input_wave $end
 $upscope $end
 $upscope $end
 $enddefinitions $end

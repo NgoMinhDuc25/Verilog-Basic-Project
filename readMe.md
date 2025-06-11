@@ -21,8 +21,8 @@ gtkwave [out_vcd_file]
 
 ## Binary decoder 
 
-![Schematic](https://www.electronics-tutorials.ws/wp-content/uploads/2018/05/combination-comb43.gif)
+![Schematic](img/2to4decoder.png)
 
 ## 4 to 2 priority encoder 
 
-![Schematic](https://www.electronics-tutorials.ws/wp-content/uploads/2013/08/comb11.gif)
+![Schematic](img/4x2Encoder.png)

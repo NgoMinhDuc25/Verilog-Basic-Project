@@ -30,3 +30,7 @@ gtkwave [out_vcd_file]
 ## 8 to 3 priority encoder 
 
 ![Schematic](img/8to3encoder.png)
+
+## 4 bit comparator from 2 bit comparator
+
+![Schematic](img/4bit_comparator.png)

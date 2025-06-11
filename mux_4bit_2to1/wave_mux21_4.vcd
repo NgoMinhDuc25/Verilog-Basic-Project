@@ -1,0 +1,54 @@
+$date
+	Wed Jun 11 18:19:46 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module mux21_4_tb $end
+$var wire 4 ! out [3:0] $end
+$var reg 4 " in1 [3:0] $end
+$var reg 4 # in2 [3:0] $end
+$var reg 1 $ sel $end
+$scope module m_tb $end
+$var wire 4 % in1 [3:0] $end
+$var wire 4 & in2 [3:0] $end
+$var wire 1 $ sel $end
+$var reg 4 ' out [3:0] $end
+$upscope $end
+$scope task init_val_test $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b1010 '
+b101 &
+b1010 %
+0$
+b101 #
+b1010 "
+b1010 !
+$end
+#5
+b101 !
+b101 '
+1$
+#10
+b1111 !
+b1111 '
+0$
+b0 #
+b0 &
+b1111 "
+b1111 %
+#15
+b0 !
+b0 '
+1$
+#20

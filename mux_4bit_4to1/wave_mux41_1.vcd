@@ -1,0 +1,90 @@
+$date
+	Wed Jun 11 18:29:37 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module mux41_1_tb $end
+$var wire 4 ! out [3:0] $end
+$var reg 4 " in1 [3:0] $end
+$var reg 4 # in2 [3:0] $end
+$var reg 4 $ in3 [3:0] $end
+$var reg 4 % in4 [3:0] $end
+$var reg 2 & sel [1:0] $end
+$scope module m_tb $end
+$var wire 4 ' in1 [3:0] $end
+$var wire 4 ( in2 [3:0] $end
+$var wire 4 ) in3 [3:0] $end
+$var wire 4 * in4 [3:0] $end
+$var wire 2 + sel [1:0] $end
+$var reg 4 , out [3:0] $end
+$upscope $end
+$scope task init_val_test $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b1010 ,
+b0 +
+b11 *
+b1100 )
+b101 (
+b1010 '
+b0 &
+b11 %
+b1100 $
+b101 #
+b1010 "
+b1010 !
+$end
+#5
+b101 !
+b101 ,
+b1 &
+b1 +
+#10
+b1100 !
+b1100 ,
+b10 &
+b10 +
+#15
+b11 !
+b11 ,
+b11 &
+b11 +
+#20
+b1111 !
+b1111 ,
+b0 &
+b0 +
+b1 %
+b1 *
+b1110 $
+b1110 )
+b0 #
+b0 (
+b1111 "
+b1111 '
+#25
+b0 !
+b0 ,
+b1 &
+b1 +
+#30
+b1110 !
+b1110 ,
+b10 &
+b10 +
+#35
+b1 !
+b1 ,
+b11 &
+b11 +
+#40

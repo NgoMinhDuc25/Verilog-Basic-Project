@@ -34,3 +34,7 @@ gtkwave [out_vcd_file]
 ## 4 bit comparator from 2 bit comparator
 
 ![Schematic](img/4bit_comparator.png)
+
+## 7 segment anode decoder
+
+![Schematic](img/anode7seg_detail.png)

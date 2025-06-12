@@ -19,6 +19,15 @@ Run gtkwave
 gtkwave [out_vcd_file]  
 ```
 
+
+## dff_and_mux
+
+![Schematic](img/b1.jpg)
+
+## Add 16 
+
+![Schematic](img/b2.jpg)
+
 ## Binary decoder 
 
 ![Schematic](img/2to4decoder.png)

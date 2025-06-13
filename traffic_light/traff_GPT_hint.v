@@ -1,4 +1,4 @@
-module traff (
+module traff_GPT_hint (
     input wire clk,            // 10MHz clock
     input wire rst_n,          // Active low reset
     input wire en,             // Enable

@@ -47,3 +47,11 @@ gtkwave [out_vcd_file]
 ## 7 segment anode decoder
 
 ![Schematic](img/anode7seg_detail.png)
+
+## Traffic light
+
+![Schematic](img/traffic.jpg)
+
+## Summary
+
+![Schematic](img/bt.jpg)

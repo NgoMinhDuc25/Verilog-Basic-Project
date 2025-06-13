@@ -1,3 +1,4 @@
+`timescale 1ms / 1us
 module traffic_light_tb;
     reg clk;
     reg en;
@@ -19,7 +20,8 @@ module traffic_light_tb;
     begin
         fork
         repeat (1000) begin
-            #5 clk = ~clk; 
+            #50 clk = ~clk; 
+            // #50 clk = ~clk; // for 10Mhz clock // `timescale 1ns / 1ps
         end
         begin 
             // #22 rst_n = 0; 

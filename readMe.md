@@ -52,6 +52,12 @@ gtkwave [out_vcd_file]
 
 ![Schematic](img/traffic.jpg)
 
+## Traffic light wave monitor
+
+![Schematic](img/traffic_light_wave1.png)
+![Schematic](img/traffic_light_wave2.png)
+![Schematic](img/traffic_light_wave3.png)
+
 ## Summary
 
 ![Schematic](img/bt.jpg)
